@@ -1,0 +1,91 @@
+$form-background-color: #f9f9f9; // Light grey background for form
+$form-border-color: #ccc; // Border color for input fields
+$button-background-color: #007bff; // Button background color
+$button-hover-color: #0056b3; // Button hover color
+$error-color: red; // Error message color
+$success-color: green; // Success message color
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 30em;
+    background-color: $form-background-color; // Form background color
+    padding: 2em; // Increased padding for better spacing
+    border-radius: 8px; // Rounded corners for the form
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+}
+
+.formItem {
+    padding: 1em;
+    margin: 1em 0;
+    flex-grow: 1;
+    border: 1px solid $form-border-color; // Border for input fields
+    border-radius: 4px; // Rounded corners
+    transition: border-color 0.3s, box-shadow 0.3s; // Smooth transition
+
+    &:focus {
+        border-color: $button-background-color; // Change border color on focus
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); // Add shadow on focus
+        outline: none; // Remove default outline
+    }
+}
+
+.formTextArea {
+    @extend .formItem;
+    min-height: 8em; // Minimum height for text areas
+}
+
+.arrayItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.buttonItem {
+    width: 3rem;
+    height: 3rem;
+    flex-grow: 0;
+    font-size: 1.5em;
+    background-color: $button-background-color; // Button background color
+    color: white; // Button text color
+    border: none; // Remove default border
+    border-radius: 4px; // Rounded corners for buttons
+    cursor: pointer; // Change cursor to pointer on hover
+    transition: background-color 0.3s, transform 0.3s; // Smooth transition
+
+    &:hover {
+        background-color: $button-hover-color; // Darker shade on hover
+        transform: scale(1.05); // Slightly enlarge button on hover
+    }
+}
+
+// Styles for error and success messages
+.errorMessage {
+    color: $error-color; // Error message color
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.successMessage {
+    color: $success-color; // Success message color
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+/**/
+.columnVisibility {
+    margin-bottom: 20px;
+    
+    h2 {
+      margin-bottom: 10px;
+    }
+  
+    div {
+      margin-bottom: 5px;
+      
+      label {
+        margin-left: 5px; // Add space between checkbox and label
+      }
+    }
+  }

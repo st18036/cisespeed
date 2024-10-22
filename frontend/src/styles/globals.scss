@@ -1,0 +1,148 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 30em;
+}
+
+.formItem {
+  padding: 1em;
+  margin: 1em 0;
+  flex-grow: 1;
+}
+
+.formTextArea {
+  @extend .formItem;
+  min-height: 8em;
+}
+
+.arrayItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.buttonItem {
+  width: 3rem;
+  height: 3rem;
+  flex-grow: 0;
+  font-size: 1.5em;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  height: 100vh;           /* Full height of the viewport */
+  background-color: #f0f0f0; /* Optional: light background for contrast */
+}
+
+.form-container {
+  width: 100%;              /* Ensure full width for responsiveness */
+  max-width: 30em;         /* Limit max width to match your form */
+  padding: 2em;            /* Additional padding for spacing */
+  border-radius: 8px;      /* Optional: rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: white; /* White background for form container */
+}
+
+
+/**/
+#main {
+  background-color: #fdfafa;  /* Light background */
+  height: 100%;
+  min-height: 100vh;
+  color: black;                /* Set default text color to black */
+}
+
+.projectName {
+  font-size: 3vw;
+  text-align: center;
+  color: black;                /* Black text for project name */
+}
+
+.block {
+  padding: 2%;
+  border-radius: 5vh;
+  color: black;                /* Set block text color to black */
+  background-color: rgba(105, 105, 117, 0.322);  /* Soft blue background */
+  width: 40%;
+  height: 60%;
+  margin-top: 2%;
+  margin-left: 28%;
+}
+
+.blockTitle {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5vw;
+  padding-bottom: 1.5%;
+  color: black;                /* Black text for block title */
+}
+
+.inputLabel {
+  width: 20%;
+  text-align: center;
+  font-size: 1.5vw;
+  vertical-align: text-top;
+  color: black;                /* Black text for input label */
+}
+
+.inputValue {
+  color: black;                /* Keep black text for input values */
+  width: 80%;
+  float: right;
+  font-size: 1.5vw;
+}
+
+#errorMessage {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5vw;
+  color: black;                /* Black text for error messages */
+}
+
+.button {
+  text-align: center;
+  border-radius: 3vh;
+  background-color: #ffffff;  /* White background for button */
+  width: 15%;
+  margin-left: 43%;
+  font-size: 1.5vw;
+  color: black;                /* Black text color for button */
+}
+
+.button:hover {
+  background-color: #d61313;  /* Red on hover */
+}
+
+.returnButton {
+  color: rgb(3, 3, 3);                /* Keep white for return button */
+  float: left;
+  margin: 1%;
+  width: 8%;
+  position: absolute;
+}
+
+
+/* In your CSS file */
+.duplicate-indicator {
+  color: red;
+  font-weight: bold;
+  margin-left: 8px; /* Space between buttons and duplicate text */
+}
+
+.duplicate {
+  color: red; /* Change to your desired color */
+  font-weight: bold;
+}
+
+.not-duplicate {
+  color: green; /* Change to your desired color */
+  font-weight: normal;
+}
+
+
+
+
+
